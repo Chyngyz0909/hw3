@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_tel">
+
+
+    <EditText
+        android:id="@+id/telN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите номер телефона"
+        android:textColorHint="#4C93CC"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="100dp"
+        android:paddingStart="30dp"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Позвонить"
+        android:textColor="@color/white"
+        android:background="#4C93CC"
+        app:layout_constraintTop_toBottomOf="@id/telN"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"/>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:textColor="@color/white"
+        android:background="#08124A"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="40dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
